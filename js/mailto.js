@@ -17,5 +17,11 @@ for (var i = 0; i < forms.length; i++) {
         
         // Abre o cliente de e-mail padrão do usuário com os campos preenchidos
         window.location.href = mailtoLink;
+
+        // Limpa os campos do formulário após o envio
+        document.getElementById('assunto').value = '';
+        document.getElementById('mensagem').value = '';
+        document.getElementById('telefone').value = '';
+
     });
 }

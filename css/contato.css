@@ -72,6 +72,7 @@
 
 .form-email>.botao {
     text-align: center;
+    height: 1rem;
 }
 
 .form-email>.botao>.form-botao {

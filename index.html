@@ -16,53 +16,56 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="topnav">
-            <a href="#" class="active"><h1>Paulosergiocf</h1></a>
-            <div id="menu-bar" class="menu-mobile">
+        <header>
+            <div class="topnav">
+                <a href="#" class="active"><h2>Paulosergiocf</h2></a>
+                <div id="menu-bar" class="menu-mobile">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <nav class="menu">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><img src="img/logo.svg" alt="logo"></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
                 <hr>
-            </div>
-            
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><img src="img/logo.svg" alt="logo"></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <hr>
-        </nav>
+            </nav>
+        </header>
+        
         <!-- Inicio -->
-        <div class="inicio">
-            <div id="inicio" class="inicio-info">
+        <main class="inicio">
+            <article id="inicio" class="inicio-info">
+                <time datetime="2024-03-26 12:15"></time>
                 <div class="titulo"><h1>Paulo Sergio de Campos Filho</h1></div>
                 <div class="subtitulo"><h2>Desenvolvedor de Software</h2></div>
                 <div class="texto"><p>&nbsp;&nbsp;&nbsp;&nbsp;Sou um apaixonado por tecnologia, desenvolvo soluções digitais inovadoras que impulsionam negócios e proporcionam experiências excepcionais aos usuários. Estou pronto para enfrentar os desafios do mundo virtual e criar soluções sob medida para suas necessidades.</p>
                 </div>
                 <div class="botao"><a href="#contato">Entrar em contato</a></div>
-            </div>
+            </article>
 
             <div class="inicio-logo">
                 <div class="svg-container">
                     <img id="svg" src="img/1.svg" alt="SVG">
                 </div>
             </div>
-        </div>
+        </main>
 
-        <div id="projetos" class="projetos">
+        <section id="projetos" class="projetos">
             <div class="projetos-titulo">
-                <h1>Portifólio de projetos</h1>
+                <h2>Portifólio de projetos</h1>
             </div>
            
             <div class="projeto projeto-esquerda">
@@ -172,10 +175,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="sobre" class="sobre">
+        </section>
+        <section id="sobre" class="sobre">
             <div class="titulo">
-                <h1>Sobre</h1>
+                <h2>Sobre</h1>
             </div>
             <div class="sobre-dados">
                 <div class="texto">
@@ -183,38 +186,38 @@
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Atuo com diversas linguagens e tecnologias, entre elas python, java, docker, linux entre outros.</p>
                 </div>
                 <div class="imagem">
-                    <img src="img/perfil.png" alt="foto">
+                    <img src="img/perfil.png" alt="Foto-Pefil">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="contato" class="contato">
+        <section id="contato" class="contato">
 
             <div class="titulo">
-                <h1>Contato</h1>
+                <h2>Contato</h1>
             </div>
             
             <div class="outros-canais">
                 <div class="lista">
                     <ul>
                         <li>
-                            <img src="img/mail.png" alt="">
+                            <img src="img/mail.png" alt="logo-email">
                             <a href="mailto:contato@paulosergiocf.com?subject=Serviço">E-mail</a>
                         </li>
                         <li>
-                            <img src="img/servico-de-call-center.png" alt="">
+                            <img src="img/servico-de-call-center.png" alt="logo-tefone">
                             <a href="tel:+5515998462920">Telefone</a>
                         </li>
                         <li>
-                            <img src="img/icons8-whatsapp.svg" alt="">
+                            <img src="img/icons8-whatsapp.svg" alt="logo-whatsapp">
                             <a href="https://web.whatsapp.com/send?phone=+5515998462920" target="_blank">WhatsApp</a>
                         </li>
                         <li>
-                            <img src="img/linkedin.png" alt="">
+                            <img src="img/linkedin.png" alt="logo-linkedin">
                             <a href="https://www.linkedin.com/in/paulosergiocf/" target="_blank">Linkedin</a>
                         </li>
                         <li>
-                            <img src="img/github.png" alt="">
+                            <img src="img/github.png" alt="logo-github">
                             <a href="https://github.com/paulosergiocf" target="_blank">Github</a>
                         </li>  
                            
@@ -225,19 +228,19 @@
                     <form class="form-email">
                         <div class="entrada">
                             <label for="telefone" class="label-form">Telefone:</label><br>
-                            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Digite seu telefone (por exemplo: xx xxxxx-xxxx)" title="Por favor, insira um número de telefone no formato correto (por exemplo: xx xxxxx-xxxx)" class="input-form" required><br>
+                            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="Digite seu telefone (por exemplo: 11988887777)" title="Exemplo: xx xxxxx-xxxx" class="input-form" required><br>
                             <label for="assunto" class="label-form">Assunto:</label><br>
                             <input type="text" id="assunto" name="assunto" placeholder="Assunto do email" class="input-form" required><br>
                             <label for="mensagem" class="label-form">Mensagem:</label><br>
                             <textarea id="mensagem" name="mensagem" rows="4" cols="50" class="input-form" placeholder="Escreva sua mensagem aqui."></textarea required><br><br>
                         </div>
                         <div class="botao">
-                            <input type="submit" value="Enviar" class="form-botao">
+                            <button type="submit" value="Enviar" class="form-botao">Enviar</button>
                         </div>
                       </form>
                 </div>
             </div>
-        </div>
+        </section>
         <script src="js/svg.js" async ></script>
         <script src="js/mailto.js" async defer></script>
         <script src="js/menu-bar.js" async defer></script>
