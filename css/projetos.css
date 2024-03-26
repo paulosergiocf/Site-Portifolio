@@ -1,0 +1,108 @@
+
+/*------------- Projetos ------------*/
+.projetos {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    background-color: #181818;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.projetos-titulo {
+    margin-top: 2rem;
+    color: #f2f2f2;
+}
+.projetos>hr{
+    margin-top: 1rem;
+    border: #222222 solid 0.1rem;
+    width: 80%;
+}
+.projeto{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+}
+
+.projeto-esquerda {
+    flex-flow: row wrap;
+}
+
+.projeto-direita {
+    flex-flow: row-reverse wrap;
+}
+.projeto>.capa{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-evenly;
+}
+
+.projeto>.capa>img {
+    width: 50%;
+}
+.projeto>.info-projeto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.projeto>.info-projeto>.info-titulo {
+    color: darkorange;
+    font-size: 0.8rem;
+}
+.projeto>.info-projeto>.info-descricao {
+    color: #969696;
+    font-size: 1rem;
+}
+
+.projeto>.info-projeto>.info-stack>ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.projeto>.info-projeto>.info-stack>ul>li {
+    margin-right: .5rem;
+    
+}
+.projeto>.info-projeto>.info-stack>ul>li>img {
+    width: 2rem;
+}
+
+.projeto>.info-projeto>.info-repos>ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.projeto>.info-projeto>.info-repos>ul>li {
+    margin-right: .5rem;
+    background-color: darkorange;
+    padding: .5rem;
+    border-radius: .2rem;
+    
+    
+}
+.projeto>.info-projeto>.info-repos>ul>li>a {
+    color: #181818;
+}
+
+
+@media screen and (max-width: 1240px) {
+    .projeto {flex-wrap: nowrap;padding: 2rem;}
+    .projeto>.capa{width: 100%;}
+    .projeto>.info-projeto{width: 100%;}
+    
+}
+
+@media screen and (max-width: 1240px) {
+    .projeto>.capa>img{width: 100%;}
+}
+
+@media screen and (max-width: 500px) {
+    .projeto {flex-wrap: wrap;padding: 2rem;}
+    .projeto>.capa{width: 100%;}
+    .projeto>.info-projeto{width: 100%;}
+}

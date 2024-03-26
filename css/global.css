@@ -13,3 +13,12 @@ ul {
 a {
     text-decoration: none;
 }
+
+
+body {
+    background-color: #252525;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}

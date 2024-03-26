@@ -4,6 +4,7 @@
     flex-flow: column nowrap;
     margin-top: 1rem;
 }
+
 .menu>hr{
     margin-top: 0.3rem;
     width: 80vh;
@@ -20,19 +21,73 @@
 
 .menu>ul>li>a {
     text-decoration: none;
+    border-radius: 0.7rem;
     color: #f2f2f2;
-    border-radius: .7rem;
 }
+
+.menu>ul>li>a:hover {
+    color: darkorange;
+    border: 0.3px darkorange solid;
+    padding: 1rem;
+    
+}
+
 .menu>ul>li>img{
     width: 3rem;
 }
+.topnav {display: none;}
 
 
 @media only screen and (max-width: 768px) {
     .menu {
-      display: none;
-      flex-direction: column;
-     
+        display: none;
     }
-  
-  }
+    .topnav {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .topnav {
+        overflow: hidden;
+        position: relative;
+      }
+      
+    .topnav #menu-bar {
+        display: none;
+    }
+      
+    .topnav a {
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+        color: darkorange;
+    }
+
+    .topnav>.menu-mobile>ul>li>a {
+        color: #f2f2f2;
+        border: darkorange 0.01rem solid;
+    }
+    .topnav>.menu-mobile>ul>li>a:hover {
+      color: #181818;
+      background-color: darkorange;
+    }
+
+    .topnav a.icon {
+        margin: 1rem 0 0 1rem;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 1;
+      }
+    
+    .active>img {
+        text-align: center;
+        width: 4rem;
+    } 
+}
+
+
+
+
+ 

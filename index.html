@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,13 +9,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/menu-bar.css">
-        <link rel="stylesheet" href="css/estyle.css">
+        <link rel="stylesheet" href="css/sobre.css">
+        <link rel="stylesheet" href="css/inicio.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="css/projetos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+        <div class="topnav">
+            <a href="#" class="active"><h1>Paulosergiocf</h1></a>
+            <div id="menu-bar" class="menu-mobile">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <hr>
+            </div>
+            
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <nav class="menu">
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -30,25 +43,21 @@
             </ul>
             <hr>
         </nav>
-
+        <!-- Inicio -->
         <div class="inicio">
-
             <div id="inicio" class="inicio-info">
                 <div class="titulo"><h1>Paulo Sergio de Campos Filho</h1></div>
                 <div class="subtitulo"><h2>Desenvolvedor de Software</h2></div>
-                <div class="texto"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque molestias blanditiis perferendis harum nisi, recusandae possimus exercitationem velit corrupti maxime illum eum iure eos aliquam est unde, atque magni?</p>
+                <div class="texto"><p>&nbsp;&nbsp;&nbsp;&nbsp;Sou um apaixonado por tecnologia, desenvolvo soluções digitais inovadoras que impulsionam negócios e proporcionam experiências excepcionais aos usuários. Estou pronto para enfrentar os desafios do mundo virtual e criar soluções sob medida para suas necessidades.</p>
                 </div>
                 <div class="botao"><a href="#contato">Entrar em contato</a></div>
-                
             </div>
 
             <div class="inicio-logo">
-                <div class="img">
-                    <img src="img/undraw_developer_activity_re_39tg(1).svg" alt="">
+                <div class="svg-container">
+                    <img id="svg" src="img/1.svg" alt="SVG">
                 </div>
-                
             </div>
-
         </div>
 
         <div id="projetos" class="projetos">
@@ -58,21 +67,21 @@
            
             <div class="projeto projeto-esquerda">
                 <div class="capa">
-                    <img src="img/download-direto.png" alt="">
+                    <img src="img/projetos/blog.svg" alt="">
                 </div>
                 <div class="info-projeto">
-                    <div class="info-titulo"><h1>Projeto</h1></div>
-                    <div class="info-descricao"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt quas voluptatibus earum, id numquam maiores nam laudantium dicta quos maxime ut laboriosam nihil deserunt rerum minima vel obcaecati ipsam!</p></div>
+                    <div class="info-titulo"><h1>Blog</h1></div>
+                    <div class="info-descricao"><p>Blog criado em angular como projeto da Formação em Angular da DIO - Digitan Inovation, integração entre as paginas e noticias, design minimalista e objetivo.</p></div>
                     <div class="info-stack">
                         <ul>
-                            <li><img src="img/favicon.ico" alt=""></li>
-                            <li><img src="img/favicon.ico" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular"></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"></li>
                         </ul>
                     </div>
                     <div class="info-repos">
                         <ul>
-                            <li><a href="">Repositório</a></li>
-                            <li><a href="">Deploy</a></li>
+                            <li><a href="https://github.com/paulosergiocf/Portifolio/assets/49497668/8eccf821-5f62-42db-9155-a1b97b5b83b9" target="_blank">Repositório</a></li>
+                            <!-- <li><a href="">Deploy</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -80,21 +89,22 @@
             <hr>
             <div class="projeto projeto-direita">
                 <div class="capa">
-                    <img src="img/download-direto.png" alt="">
+                    <img src="img/projetos/Amigo-Secreto.svg" alt="">
                 </div>
                 <div class="info-projeto">
-                    <div class="info-titulo"><h1>Projeto</h1></div>
-                    <div class="info-descricao"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt quas voluptatibus earum, id numquam maiores nam laudantium dicta quos maxime ut laboriosam nihil deserunt rerum minima vel obcaecati ipsam!</p></div>
+                    <div class="info-titulo"><h1>Web APP - Amigo Secreto</h1></div>
+                    <div class="info-descricao"><p>Aplicação Web para gerenciar a sortear amigos secretos. aplicação tem o objetivo de tornar facil se segura os entros de fim de ano.</p></div>
                     <div class="info-stack">
                         <ul>
-                            <li><img src="img/favicon.ico" alt=""></li>
-                            <li><img src="img/favicon.ico" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="django"></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="postgres"></li>
                         </ul>
                     </div>
                     <div class="info-repos">
                         <ul>
-                            <li><a href="">Repositório</a></li>
-                            <li><a href="">Deploy</a></li>
+                            <li><a href="https://github.com/paulosergiocf/AmigoSecreto" target="_blank">Repositório</a></li>
+                            <!-- <li><a href="">Deploy</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -102,21 +112,62 @@
             <hr>
             <div class="projeto projeto-esquerda">
                 <div class="capa">
-                    <img src="img/download-direto.png" alt="">
+                    <img src="img/projetos/Youtube.svg" alt="">
                 </div>
                 <div class="info-projeto">
-                    <div class="info-titulo"><h1>Projeto</h1></div>
-                    <div class="info-descricao"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt quas voluptatibus earum, id numquam maiores nam laudantium dicta quos maxime ut laboriosam nihil deserunt rerum minima vel obcaecati ipsam!</p></div>
+                    <div class="info-titulo"><h1>Download Musicas Youtube</h1></div>
+                    <div class="info-descricao"><p>O que motivou a criação dessa ferramenta foi a necessidade de adicionar musicas Mp3 a um pendrive para poder ouvir no carro. Com o avanço das ferramentas de streaming houve uma queda em quantiade e qualidade nas ferramentas de downloads, principalmente para downloads em massa, quando surgiu a demanda, percebi que as ferramentas que utilizava ou estava defasadas e deixaram de funcionar ou passaram a cobrar pelo serviço.</p></div>
                     <div class="info-stack">
                         <ul>
-                            <li><img src="img/favicon.ico" alt=""></li>
-                            <li><img src="img/favicon.ico" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"></li>
                         </ul>
                     </div>
                     <div class="info-repos">
                         <ul>
-                            <li><a href="">Repositório</a></li>
-                            <li><a href="">Deploy</a></li>
+                            <li><a href="https://github.com/paulosergiocf/Download-Musicas-Youtube" target="_blank">Repositório</a></li>
+                            <li><a href="https://github.com/paulosergiocf/Download-Musicas-Youtube/releases/tag/v1.0-Alpha" target="_blank">Deploy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="projeto projeto-direita">
+                <div class="capa">
+                    <img src="img/projetos/calc.svg" alt="">
+                </div>
+                <div class="info-projeto">
+                    <div class="info-titulo"><h1>Calculadora de Área</h1></div>
+                    <div class="info-descricao"><p>Esta calculadora foi criada com o objetivo de facilitar conversões de área mais utilizadas em certidões de registro de imóveis rurais no estado do paraná.</p></div>
+                    <div class="info-stack">
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"></li>
+                        </ul>
+                    </div>
+                    <div class="info-repos">
+                        <ul>
+                            <li><a href="https://github.com/paulosergiocf/CalculadoraDeArea" target="_blank">Repositório</a></li>
+                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="projeto projeto-esquerda">
+                <div class="capa">
+                    <img src="img/projetos/DesenharAzimute.svg" alt="">
+                </div>
+                <div class="info-projeto">
+                    <div class="info-titulo"><h1>Desenhar com Azimutes/Rumos e distâncias no CAD</h1></div>
+                    <div class="info-descricao"><p>Desenvolvi este programa com o objetivo de testar e aprimorar minhas habilidades com python, e tambem gerar scripts com azimutes e distâncias de maneira mais fácil.</p></div>
+                    <div class="info-stack">
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"></li>
+                        </ul>
+                    </div>
+                    <div class="info-repos">
+                        <ul>
+                            <li><a href="https://github.com/paulosergiocf/Desenhar-azimute-rumo-e-distancias" target="_blank">Repositório</a></li>
+                            <li><a href="https://github.com/paulosergiocf/Desenhar-azimute-rumo-e-distancias/releases/tag/v1.0" target="_blank">Deploy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,10 +177,15 @@
             <div class="titulo">
                 <h1>Sobre</h1>
             </div>
-            <div class="texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus exercitationem totam sapiente, ipsam maxime obcaecati voluptatibus! Corporis voluptate dolore sequi, facere earum vero nobis rem minima officia, excepturi neque modi!</p>
+            <div class="sobre-dados">
+                <div class="texto">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Olá, sou apaixonado por tecnologia, e atuo na área a alguns anos, sou formado em Analise e Desenvolvimento de Sistema e busco sempre complementar meus conhecimentos para me manter atualizado.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Atuo com diversas linguagens e tecnologias, entre elas python, java, docker, linux entre outros.</p>
+                </div>
+                <div class="imagem">
+                    <img src="img/perfil.png" alt="foto">
+                </div>
             </div>
-
         </div>
 
         <div id="contato" class="contato">
@@ -138,8 +194,6 @@
                 <h1>Contato</h1>
             </div>
             
-            
-
             <div class="outros-canais">
                 <div class="lista">
                     <ul>
@@ -152,8 +206,8 @@
                             <a href="tel:+5515998462920">Telefone</a>
                         </li>
                         <li>
-                            <img src="img/github.png" alt="">
-                            <a href="https://github.com/paulosergiocf" target="_blank">WhatsApp</a>
+                            <img src="img/icons8-whatsapp.svg" alt="">
+                            <a href="https://web.whatsapp.com/send?phone=+5515998462920" target="_blank">WhatsApp</a>
                         </li>
                         <li>
                             <img src="img/linkedin.png" alt="">
@@ -168,22 +222,24 @@
                 </div>
                 
                 <div class="formulario">
-                    <form id="form-email">
-                        <label for="telefone" class="label-form">Telefone:</label><br>
-                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Digite seu telefone (por exemplo: xx xxxxx-xxxx)" title="Por favor, insira um número de telefone no formato correto (por exemplo: xx xxxxx-xxxx)" class="input-form" required><br>
-                        <label for="assunto" class="label-form">Assunto:</label><br>
-                        <input type="text" id="assunto" name="assunto" placeholder="Assunto do email" class="input-form" required><br>
-                        <label for="mensagem" class="label-form">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" class="input-form" placeholder="Escreva sua mensagem aqui."></textarea required><br><br>
+                    <form class="form-email">
+                        <div class="entrada">
+                            <label for="telefone" class="label-form">Telefone:</label><br>
+                            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Digite seu telefone (por exemplo: xx xxxxx-xxxx)" title="Por favor, insira um número de telefone no formato correto (por exemplo: xx xxxxx-xxxx)" class="input-form" required><br>
+                            <label for="assunto" class="label-form">Assunto:</label><br>
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto do email" class="input-form" required><br>
+                            <label for="mensagem" class="label-form">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="4" cols="50" class="input-form" placeholder="Escreva sua mensagem aqui."></textarea required><br><br>
+                        </div>
                         <div class="botao">
                             <input type="submit" value="Enviar" class="form-botao">
                         </div>
-                        
                       </form>
                 </div>
             </div>
         </div>
-
+        <script src="js/svg.js" async ></script>
         <script src="js/mailto.js" async defer></script>
+        <script src="js/menu-bar.js" async defer></script>
     </body>
 </html>
