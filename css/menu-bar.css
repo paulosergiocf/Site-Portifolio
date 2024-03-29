@@ -55,6 +55,7 @@
       
     .topnav #menu-bar {
         display: none;
+
     }
       
     .topnav a {
@@ -82,7 +83,6 @@
       }
     
     .active>img {
-        text-align: center;
         width: 4rem;
     } 
 }
