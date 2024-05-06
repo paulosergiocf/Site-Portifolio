@@ -1,93 +1,33 @@
+.navbar {
+    background-color: #101010;
+    /* Cinza Escuro */
+    padding: 10px 20px;
 
-.menu {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 1rem;
 }
-
-.menu>hr{
-    margin-top: 0.3rem;
-    width: 80vh;
-    border: #272727 solid 0.3px;
-}
-
-.menu>ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-}
-
-.menu>ul>li>a {
-    text-decoration: none;
-    border-radius: 0.7rem;
-    color: #f2f2f2;
-}
-
-.menu>ul>li>a:hover {
+.navbar-brand {
     color: darkorange;
-    border: 0.3px darkorange solid;
-    padding: 1rem;
-    
+    font-weight: bold;
 }
 
-.menu>ul>li>img{
-    width: 3rem;
+.navbar-brand:hover {
+    color: darkorange;
 }
-.topnav {display: none;}
-
-
-@media only screen and (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    .topnav {
-        display: flex;
-        flex-flow: column nowrap;
-        margin-top: 1rem;
-        width: 100%;
-    }
-    .topnav {
-        overflow: hidden;
-        position: relative;
-      }
-      
-    .topnav #menu-bar {
-        display: none;
-
-    }
-      
-    .topnav a {
-        padding: 1rem;
-        text-decoration: none;
-        display: block;
-        color: darkorange;
-    }
-
-    .topnav>.menu-mobile>ul>li>a {
-        color: #f2f2f2;
-        border: darkorange 0.01rem solid;
-    }
-    .topnav>.menu-mobile>ul>li>a:hover {
-      color: #181818;
-      background-color: darkorange;
-    }
-
-    .topnav a.icon {
-        margin: 1rem 0 0 1rem;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 1;
-      }
-    
-    .active>img {
-        width: 4rem;
-    } 
+.navbar-toggler {
+    border-color: rgb(48, 47, 46);
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #e0e1e2;
+    /* color: var(--bs-navbar-active-color); */
+}
 
+.nav-link {
+    color: #e0e1e2;
+}
 
-
- 
+.nav-link:hover,.nav-link.active:hover {
+    color: darkorange;
+}

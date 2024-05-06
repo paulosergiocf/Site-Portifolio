@@ -1,108 +1,91 @@
 
-/*------------- Projetos ------------*/
-.projetos {
-    margin-top: 2rem;
-    display: flex;
-    flex-flow: column wrap-reverse;
-    background-color: #181818;
-    align-items: center;
-    width: 100%;
-    
+/* Seção Projetos */
+#projetos {
+    background: #2F2E41;
+    padding: 50px 0;
 }
 
-.projetos-titulo {
-    margin-top: 2rem;
+#projetos h2 {
+    text-align: center;
     color: #f2f2f2;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
-.projetos>hr{
-    margin-top: 1rem;
-    border: #222222 solid 0.1rem;
-    width: 80%;
-}
-.projeto{
+
+.col {
     display: flex;
-    flex-flow: row wrap;
-    margin: 1rem 0 1rem 0;
+    flex-wrap: wrap;
     justify-content: center;
+
 }
 
-.projeto-esquerda {
-    flex-flow: row wrap;
+/* Cards */
+.card {
+    margin: 1rem;
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
-.projeto-direita {
-    flex-flow: row-reverse wrap;
-}
-.projeto>.capa{
-    display: flex;
-    margin-right: 2rem;
-    justify-content: space-evenly;
-}
-
-.projeto>.capa>img {
-    width: 50%;
-}
-.projeto>.info-projeto {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+/* Imagens */
+.card-img-top {
+    margin-top: .5rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    /* Bordas arredondadas na parte superior */
 }
 
-.projeto>.info-projeto>.info-titulo {
+/* Conteúdo do Card */
+.card-body {
+    padding: 20px;
+    /* Espaçamento interno do card */
+}
+
+.card-title {
     color: darkorange;
-    font-size: 0.8rem;
-}
-.projeto>.info-projeto>.info-descricao {
-    color: #969696;
-    font-size: 1rem;
+    /* Cor do título do card */
+    font-weight: 600;
+    /* Peso da fonte */
 }
 
-.projeto>.info-projeto>.info-stack>ul{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-.projeto>.info-projeto>.info-stack>ul>li {
-    margin-right: .5rem;
-    
-}
-.projeto>.info-projeto>.info-stack>ul>li>img {
-    width: 2rem;
+.card-text {
+    color: #f2f2f2;
+    line-height: 1.6;
 }
 
-.projeto>.info-projeto>.info-repos>ul{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.badge {
+    margin-right: 5px;
 }
-.projeto>.info-projeto>.info-repos>ul>li {
-    margin-right: .5rem;
+
+
+/* Botões */
+.btn {
+    margin-top: 1rem;
     background-color: darkorange;
-    padding: .5rem;
-    border-radius: .2rem;
-    
-    
-}
-.projeto>.info-projeto>.info-repos>ul>li>a {
     color: #181818;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
-
-@media screen and (max-width: 1240px) {
-    .projeto {flex-wrap: nowrap;padding: 2rem;}
-    .projeto>.capa{width: 100%;}
-    .projeto>.info-projeto{width: 100%;}
-    
+.btn:hover {
+    background-color: #181818;
+    color: darkorange;
 }
 
-@media screen and (max-width: 1240px) {
-    .projeto>.capa>img{width: 100%;}
-}
-
-@media screen and (max-width: 500px) {
-    .projeto {flex-wrap: wrap;padding: 2rem;}
-    .projeto>.capa{width: 100%;}
-    .projeto>.info-projeto{width: 100%;}
+/* Estilização Responsiva (Exemplo para tablets e smartphones) */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        /* Cards em coluna */
+    }
+    .col {
+        flex: 1 0 auto;
+        /* Distribuir espaço igualmente entre os cards */
+        margin-bottom: 20px;
+        /* Espaçamento entre cards na vertical */
+    }
 }

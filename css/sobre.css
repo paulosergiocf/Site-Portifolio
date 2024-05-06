@@ -1,69 +1,104 @@
-
-
-
-
-
-/*------------- Sobre ------------*/
-.sobre {
-    margin-top: 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 60%;
-}
-
-.sobre>.titulo{
-    color: #f2f2f2;
-}
-
-.sobre>.sobre-dados {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-flow: row wrap-reverse;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.sobre>.sobre-dados>.texto{
-    color: #f2f2f2;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-    width: 40%;
-}
-
-.sobre>.sobre-dados>.imagem {
-    margin-left: 1rem;
-    width: 30%;
-    align-items: center;
-}
-
-.sobre>.sobre-dados>.imagem>img {
+section#sobre {
+    background-color: #252525;
+    padding: 50px 0;
     width: 100%;
 }
 
-
-@media screen and (max-width: 1650px) {
-
+.sobre .titulo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5f5f5;
 }
 
+.sobre .container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos do Accordion */
+.sobre .accordion {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
+
+.sobre .accordion-item {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #f2f2f2;
+    background-color: #181818;
+    border: none;
+}
+
+.sobre .accordion-button  {
+    font-weight: bold;
+    padding: 15px 20px;
+    /* Espaçamento interno do botão */
+    border: none;
+    /* Remover borda do botão */
+    border-radius: 5px;
+    /* Borda arredondada */
+    color: #f2f2f2;
+    background-color: #181818;
+}
+
+.sobre .accordion-button:active,
+.sobre .accordion-button:focus,
+.sobre .accordion-button:hover {
+    color: #f2f2f2;
+    background-color: #181818;
+    outline: none;
+}
+
+.sobre .accordion-collapse {
+    /* Cor de fundo do conteúdo expandido */
+    padding: 15px;
+    background: #252525;
+    color: #f2f2f2;
+    /* Espaçamento interno do conteúdo */
+}
+
+.sobre .accordion-body p {
+    text-align: justify; 
+    line-height: 1.5;
+    
+}
+
+.sobre .imagem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sobre .imagem button {
+    padding: 0;
+    border: none;
+    background-color: #252525;
+}
+
+.sobre .imagem button:hover {
+    background-color: 252525;
+}
+
+.sobre .popover-body {
+    font-size: 0.8rem;
+}
+
+div.col-6.col-sm-2{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.list-group-item {
+    color: #f2f2f2;
+    background: none;    
+}
 @media screen and (max-width: 800px) {
-    .sobre>.sobre-dados>.imagem {
+    div.col-6.col-sm-2{
         width: 100%;
     }
-    sobre>.sobre-dados>.texto{
-        width: 100%;
-    }
-
-}
-@media screen and (max-width: 500px) {
-    .sobre>.sobre-dados>.imagem {
-        width: 100%;
-    }
-    .sobre>.sobre-dados>.texto {
-        width: 100%;
-    }
-
 }
