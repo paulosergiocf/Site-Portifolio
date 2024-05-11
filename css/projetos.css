@@ -13,6 +13,11 @@
     margin-bottom: 40px;
 }
 
+
+.row {
+    margin: 0;
+}
+
 .col {
     display: flex;
     flex-wrap: wrap;
