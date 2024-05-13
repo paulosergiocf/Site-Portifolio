@@ -8,8 +8,9 @@
 #projetos h2 {
     text-align: center;
     color: #f2f2f2;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    text-transform: uppercase;
     margin-bottom: 40px;
 }
 
@@ -64,16 +65,22 @@
     margin-right: 5px;
 }
 
-
+.disponibilizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Botões */
 .btn {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-left: .5rem;
     background-color: darkorange;
     color: #181818;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     transition: background-color 0.3s;
+    
 }
 
 .btn:hover {

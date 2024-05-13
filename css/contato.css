@@ -6,11 +6,13 @@ section#contato {
     
   }
   
-  .contato .titulo h2 {
-    text-align: center; 
-    font-size: 2rem; 
-    margin-bottom: 30px;
-    color: #f5f5f5;
+  .titulo>h2 {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
   }
   
   .contato form {
@@ -44,6 +46,13 @@ section#contato {
     border-radius: 5px; 
   }
   
+  .captcha {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
   /* Botão de envio */
   .contato button[type="submit"] {
     background-color: #212529;
@@ -51,6 +60,14 @@ section#contato {
     border-color: #212529; 
     padding: 10px 20px; 
     border-radius: 5px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    width: 100%;
   }
+
   
+  @media screen and (max-width: 500px) {
+  .accordion-body {
+    padding: 0;
+    
+  }
+}

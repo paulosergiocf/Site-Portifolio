@@ -101,4 +101,9 @@ div.col-6.col-sm-2{
     div.col-6.col-sm-2{
         width: 100%;
     }
+
+    .sobre .container {
+        max-width: none;
+        margin: 0 auto;
+    }
 }
