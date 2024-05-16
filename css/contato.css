@@ -1,6 +1,6 @@
 /* Seção Contato */
 section#contato {
-    background-color: #181818;
+    background-color: #252525;
     padding: 2rem; 
     width: 100%;
     
@@ -55,13 +55,17 @@ section#contato {
 
   /* Botão de envio */
   .contato button[type="submit"] {
-    background-color: #212529;
+    background-color: #353535;
     color: #fff; 
-    border-color: #212529; 
     padding: 10px 20px; 
     border-radius: 5px; 
     margin-top: 20px;
     width: 100%;
+  }
+
+  .contato button[type="submit"]:hover {
+    background-color: #181818;
+    color: darkorange; 
   }
 
   

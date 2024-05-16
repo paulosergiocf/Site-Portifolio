@@ -1,10 +1,9 @@
 
 
 .inicio {
-    padding: 2rem;
+    padding:  5rem 2rem 5rem 2rem;
     background: #181818;
     width: 100%;
-    min-height: 90vh;
     padding-bottom: 2rem;
     
 }
@@ -56,4 +55,8 @@
         flex-direction: column-reverse;   
     }
 }
+
+
+        
+
 
