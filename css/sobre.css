@@ -4,13 +4,13 @@ section#sobre {
     width: 100%;
 }
 
-.sobre .titulo h2 {
+.sobre>.conteudo>.titulo>h2 {
     text-align: center;
     margin-bottom: 30px;
     color: #f5f5f5;
 }
 
-.sobre .container {
+.sobre>.conteudo>.container {
     max-width: 80%;
     margin: 0 auto;
     background-color: #181818;
@@ -111,5 +111,8 @@ div.col-6.col-sm-2{
     .sobre .container {
         max-width: none;
         margin: 0 auto;
+    }
+    .conteudo {
+        width: 100%;
     }
 }

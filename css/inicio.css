@@ -8,20 +8,20 @@
     
 }
 
-.inicio>.container>.row>.col {
+.inicio>.conteudo>.container>.row>.col {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-.inicio>.container>.row>.col>.titulo>h1 {
+.inicio>.conteudo>.container>.row>.col>.titulo>h1 {
     color: darkorange;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
 }
-.inicio>.container>.row>.col>.subtitulo>h2 {
+.inicio>.conteudo>.container>.row>.col>.subtitulo>h2 {
     color: gray;
     text-align: center;
     font-weight: bolder;
@@ -29,17 +29,18 @@
     margin-bottom: 1rem;
 }
 
-.inicio>.container>.row>.col>.texto>p {
+.inicio>.conteudo>.container>.row>.col>.texto>p {
     color: #f2f2f2;
     text-align: justify;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
 
-.inicio>.container>.row>.col>.botao{
+.inicio>.conteudo>.container>.row>.col>.botao{
     margin-top: 1rem;
 }
-.inicio>.container>.row>.col>.botao>a {
+
+.inicio>.conteudo>.container>.row>.col>.botao>a {
     padding: 1rem;
     border-radius: 0.5rem;
     background: darkorange;
@@ -51,11 +52,16 @@
 }
 
 @media screen and (max-width: 500px) {
-    .inicio>.container>.row{
+    .inicio {
+        padding: 2rem 0 2rem 0;
+    }
+    .inicio>.conteudo>.container>.row{
         flex-direction: column-reverse;   
     }
+    .inicio>.conteudo {
+        width: 100%;
+    }
 }
-
 
         
 

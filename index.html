@@ -17,73 +17,70 @@
     <link rel="stylesheet" href="css/global.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/menu-bar.css">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/rodape.css">
-
 </head>
 
 <body>
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio">PAULOSERGIOCF</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
+        <div class="container conteudo">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#inicio"><span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>&nbsp;paulosergiocf</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projetos">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-
     <!-- Inicio -->
     <main class="inicio">
-        <div class="container text-center">
-            <div class="row">
-                <article class="col">
-                    <time datetime="2024-05-05 12:15"></time>
-                    <div class="titulo">
-                        <h1>PAULO SERGIO DE CAMPOS FILHO</h1>
-                    </div>
-                    <div class="subtitulo">
-                        <h2>Desenvolvedor de Software</h2>
-                    </div>
-                    <div class="texto">
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;
-                            Sou um profissional proativo, dedicado e com grande capacidade de trabalhar em equipe. Tenho
-                            certeza
-                            de que posso contribuir significativamente para o sucesso dos seus projetos.
-                            Estou pronto para enfrentar os desafios do mundo virtual e criar soluções sob medida para
-                            suas
-                            necessidades.</p>
-                    </div>
-                    <div class="botao"><a href="#contato">Entrar em contato</a></div>
-                </article>
+        <div class="container conteudo">
+            <div class="container text-center">
+                <div class="row">
+                    <article class="col">
+                        <time datetime="2024-05-05 12:15"></time>
+                        <div class="titulo">
+                            <h1>PAULO SERGIO DE CAMPOS FILHO</h1>
+                        </div>
+                        <div class="subtitulo">
+                            <h2>Desenvolvedor de Software</h2>
+                        </div>
+                        <div class="texto">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                                Sou um profissional proativo e dedicado e atuo com desenvolvimento de software. Tenho amplo conhecimento em diversas linguagens e tecnologias, como Java, Python, Docker, Angular, etc. Estou pronto para criar soluções sob medida para as mais diversas necessidades.
+                            </p>
+                        </div>
+                        <div class="botao"><a href="#contato">Entrar em contato</a></div>
+                    </article>
 
-                <div class="col">
-                    <div class="container-fluid center">
-                        <img class="img-fluid" src="img/1.svg" alt="SVG">
+                    <div class="col">
+                        <div class="container-fluid center">
+                            <img class="img-fluid" src="img/1.svg" alt="SVG">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,118 +88,131 @@
     </main>
     <!-- Projetos -->
     <section id="projetos" class="projetos">
-        <div class="container">
-            <h2>Portifólio de projetos</h2>
-        </div>
+        <div class="container conteudo">
+            <div class="container">
+                <h2>Portifólio de projetos</h2>
+            </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="img/capa-digitar-coordenadas-utm.svg" class="card-img-top" alt="capa-projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">Digitar Coordenadas UTM no Autocad</h5>
-                        <p class="card-text">Aplicação em python integrada ao Autocad, utilizando circulo e texto
-                            cria-se
-                            a representação de um ponto em um
-                            arquivo DWG, pode ser muito util quando é necessário digitar longas listas de coordenadas
-                            com identificação diretamente no autocad, podendo utilizar somente o teclado e sem ter que
-                            ficar trocando o foco, ou alternando entre teclado e mouse.</p>
-                        <div class="container text-center">
-                            <span class="badge text-bg-dark">python</span>
-                            <span class="badge text-bg-dark">tkinter</span>
-                        </div>
-                        <div class=" container disponibilizacao">
-                            <a type="button" href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad" target="_blank" class="btn btn-primary">Repositório</a>
-                            <a type="button" href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad/releases/tag/v2.0" target="_blank" class="btn btn-primary">Deploy</a>
-                        </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/capa-digitar-coordenadas-utm.svg" class="card-img-top" alt="capa-projeto">
+                        <div class="card-body">
+                            <h5 class="card-title">Digitar Coordenadas UTM no Autocad</h5>
+                            <p class="card-text">Aplicação em python integrada ao Autocad, utilizando circulo e texto
+                                cria-se
+                                a representação de um ponto em um
+                                arquivo DWG, pode ser muito util quando é necessário digitar longas listas de
+                                coordenadas
+                                com identificação diretamente no autocad, podendo utilizar somente o teclado e sem ter
+                                que
+                                ficar trocando o foco, ou alternando entre teclado e mouse.</p>
+                            <div class="container text-center">
+                                <span class="badge text-bg-dark">python</span>
+                                <span class="badge text-bg-dark">tkinter</span>
+                            </div>
+                            <div class=" container disponibilizacao">
+                                <a type="button" href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad"
+                                    target="_blank" class="btn btn-primary">Repositório</a>
+                                <a type="button"
+                                    href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad/releases/tag/v2.0"
+                                    target="_blank" class="btn btn-primary">Deploy</a>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/capa-amigo-secreto.svg" class="card-img-top" alt="capa-projeto">
+                        <div class="card-body">
+                            <h5 class="card-title">Web APP - Amigo Secreto</h5>
+                            <p class="card-text">Aplicação Web para gerenciar e realizaar sorteios amigos secretos. A
+                                aplicação tem o objetivo de tornar facil se segura sorteios em datas comemorativas.</p>
+                            <div class="container text-center">
+                                <span class="badge text-bg-dark">python</span>
+                                <span class="badge text-bg-dark">postgres</span>
+                                <span class="badge text-bg-dark">django</span>
+                            </div>
+                            <div class="container disponibilizacao">
+                                <a type="button" href="https://github.com/paulosergiocf/AmigoSecreto" target="_blank"
+                                    class="btn btn-primary">Repositório</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/blog.svg" class="card-img-top" alt="capa-projeto">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog</h5>
+                            <p class="card-text">Blog criado em angular como projeto da Formação em Angular da DIO -
+                                Digital Inovation, integração entre as paginas e noticias, design minimalista e
+                                objetivo.</p>
+                            <div class="container text-center">
+                                <span class="badge text-bg-dark">angular</span>
+                                <span class="badge text-bg-dark">type script</span>
+                            </div>
+                            <div class="container disponibilizacao">
+                                <a type="button" href="https://github.com/paulosergiocf/blog" target="_blank"
+                                    class="btn btn-primary">Repositório</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/FastApiBase.svg" class="card-img-top" alt="capa-projeto">
+                        <div class="card-body">
+                            <h5 class="card-title">FastApiBase</h5>
+                            <p class="card-text">Este repositorio tem o objetivo de fornecer uma base miníma ja
+                                construida para criação de apis com fast-api.
+                            </p>
+                            <div class="container text-center">
+                                <span class="badge text-bg-dark">python</span>
+                                <span class="badge text-bg-dark">fastapi</span>
+                                <span class="badge text-bg-dark">jwt</span>
+                            </div>
+                            <div class="container disponibilizacao">
+                                <a type="button" href="https://github.com/paulosergiocf/FastApi-Base" target="_blank"
+                                    class="btn btn-primary">Repositório</a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/capa-amigo-secreto.svg" class="card-img-top" alt="capa-projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">Web APP - Amigo Secreto</h5>
-                        <p class="card-text">Aplicação Web para gerenciar e realizaar sorteios amigos secretos. A aplicação tem o objetivo de tornar facil se segura sorteios em datas comemorativas.</p>
-                        <div class="container text-center">
-                            <span class="badge text-bg-dark">python</span>
-                            <span class="badge text-bg-dark">postgres</span>
-                            <span class="badge text-bg-dark">django</span>
-                        </div>
-                        <div class="container disponibilizacao">
-                            <a type="button" href="https://github.com/paulosergiocf/AmigoSecreto" target="_blank" class="btn btn-primary">Repositório</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="img/blog.svg" class="card-img-top" alt="capa-projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">Blog</h5>
-                        <p class="card-text">Blog criado em angular como projeto da Formação em Angular da DIO - Digital Inovation, integração entre as paginas e noticias, design minimalista e objetivo.</p>
-                        <div class="container text-center">
-                            <span class="badge text-bg-dark">angular</span>
-                            <span class="badge text-bg-dark">type script</span>
-                        </div>
-                        <div class="container disponibilizacao">
-                            <a type="button" href="https://github.com/paulosergiocf/blog" target="_blank" class="btn btn-primary">Repositório</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="img/FastApiBase.svg" class="card-img-top" alt="capa-projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">FastApiBase</h5>
-                        <p class="card-text">Este repositorio tem o objetivo de fornecer uma base miníma ja construida para criação de apis com fast-api.
-                        </p>
-                        <div class="container text-center">
-                            <span class="badge text-bg-dark">python</span>
-                            <span class="badge text-bg-dark">fastapi</span>
-                            <span class="badge text-bg-dark">jwt</span>
-                        </div>
-                        <div class="container disponibilizacao">
-                            <a type="button" href="https://github.com/paulosergiocf/FastApi-Base" target="_blank" class="btn btn-primary">Repositório</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </section>
     <!-- Sobre -->
     <section id="sobre" class="sobre">
+        <div class="container conteudo">
 
-        <div class="titulo">
-            <h2>Sobre</h2>
-        </div>
+            <div class="titulo">
+                <h2>Sobre</h2>
+            </div>
 
-        <div class="container text-center">
-            <div class="row">
+            <div class="container text-center">
+                <div class="row">
 
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <hr>
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Apresentação
-                            </button>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <hr>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Apresentação
+                                </button>
 
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="row">
-                                    <div class="col-6 col-sm-2"">
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-2"">
                                         <p>&nbsp;&nbsp;&nbsp;&nbsp;Olá, sou apaixonado por tecnologia, e atuo como
                                             desenvolvedor java na empresa <strong>Tata Consultancy Services</strong>,
                                             sou
@@ -216,37 +226,39 @@
                                         </p>
                                     </div>
                                     <div class=" col-6 col-sm-2">
-                                        <div class="imagem">
-                                            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
-                                                data-bs-title="Olá! Estou muito feliz que esteja aqui!"
-                                                data-bs-content="Se tiver alguma dúvida por favor entre em contato">
-                                                <img class="img-fluid" src="img/perfil.png" alt="Foto-Pefil">
-                                            </button>
+                                            <div class="imagem">
+                                                <button type="button" class="btn btn-lg btn-danger"
+                                                    data-bs-toggle="popover"
+                                                    data-bs-title="Olá! Estou muito feliz que esteja aqui!"
+                                                    data-bs-content="Se tiver alguma dúvida por favor entre em contato">
+                                                    <img class="img-fluid" src="img/perfil.png" alt="Foto-Pefil">
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <hr>
-                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Formação
-                                
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p>Formado em <strong>Análise e Desenvolvimento de Sistema</strong> no início de
-                                    2024 pela Universidade Estácio de Sá.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <hr>
+                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Formação
+
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Formado em <strong>Análise e Desenvolvimento de Sistema</strong> no início de
+                                        2024 pela Universidade Estácio de Sá.</p>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,54 +269,59 @@
     </section>
     <!-- Contato -->
     <section id="contato" class="contato">
+        <div class="container conteudo">
 
-        <div class="titulo">
-            <h2>Contato</h2>
+            <div class="titulo">
+                <h2>Contato</h2>
+            </div>
+
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="d500dd23-015a-4cc7-9e8c-31ede41bd844">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">🪪</span>
+                    <input type="text" class="form-control" placeholder="seu nome aqui" aria-label="Username"
+                        aria-describedby="basic-addon1" name="name" required width: 400px>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">✉️</span>
+                    <input class="form-control" placeholder="seu e-mail aqui" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2" type="email" name="email" required width: 400px>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">📞</span>
+                    <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)"
+                        placeholder="Digite seu telefone (por exemplo: 11988887777)" pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
+                        title="Exemplo: xx xxxxx-xxxx" width: 400px>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">📝</span>
+                    <textarea class="form-control" aria-label="With textarea" name="message" required width:
+                        400px></textarea>
+                </div>
+                <div class="input-group captcha">
+                    <div class="h-captcha" data-captcha="true"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
-
-
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-            <input type="hidden" name="access_key" value="d500dd23-015a-4cc7-9e8c-31ede41bd844">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">🪪</span>
-                <input type="text" class="form-control" placeholder="seu nome aqui" aria-label="Username"
-                    aria-describedby="basic-addon1" name="name" required width: 400px>
-            </div>
-
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">✉️</span>
-                <input class="form-control" placeholder="seu e-mail aqui" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2" type="email" name="email" required width: 400px>
-            </div>
-
-            <div class="input-group mb-3">
-                <span class="input-group-text">📞</span>
-                <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)"
-                    placeholder="Digite seu telefone (por exemplo: 11988887777)" pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
-                    title="Exemplo: xx xxxxx-xxxx" width: 400px>
-            </div>
-            
-            <div class="input-group">
-                <span class="input-group-text">📝</span>
-                <textarea class="form-control" aria-label="With textarea" name="message" required width: 400px></textarea>
-            </div>
-            <div class="input-group captcha">
-                <div class="h-captcha" data-captcha="true"></div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
     </section>
     <!-- Rodapé -->
     <footer class="container-fluid text-white-50 py-4">
-        <div class="container text-center">
-            <div class="row">
-                <div class="container">
-                    <span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>
-                    <small> &#127279;Paulo Sergio de Campos Filho.</small>
-                </div>
+        <div class="container conteudo">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="container">
+                        <span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>
+                        <small> &#169; 2024 - Paulo Sergio de Campos Filho.</small>
+                    </div>
 
+                </div>
             </div>
         </div>
     </footer>

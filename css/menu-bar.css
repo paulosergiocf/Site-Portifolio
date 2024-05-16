@@ -1,5 +1,7 @@
-.navbar {
+header {
     background-color: #101010;
+}
+.navbar {
     padding: 10px 20px;
 
 }
@@ -15,16 +17,18 @@
     border-color: rgb(48, 47, 46);
 }
 .navbar-expand-lg .navbar-collapse {
-    justify-content: center;
+    justify-content: right;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #e0e1e2;
-    /* color: var(--bs-navbar-active-color); */
 }
 
 .nav-link {
     color: #e0e1e2;
+    font-weight: bolder;
+    size: 1.5rem;
+    margin-left: 1rem;
 }
 
 .nav-link:hover,.nav-link.active:hover {

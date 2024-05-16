@@ -1,10 +1,11 @@
 /* Seção Contato */
 section#contato {
     background-color: #252525;
-    padding: 2rem; 
+    padding: 1rem; 
     width: 100%;
     
   }
+
   
   .titulo>h2 {
     text-align: center;

@@ -28,3 +28,15 @@ header {
     margin: 0;
     padding: 0;
 }
+
+.conteudo {
+    width: 80%;
+    
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        width: 100%;
+        
+    }
+}

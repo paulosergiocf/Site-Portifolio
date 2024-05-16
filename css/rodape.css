@@ -3,3 +3,12 @@ footer {
     color: #fff;
     padding: 1rem 2rem;
 }
+
+
+
+@media screen and (min-width: 500px) {
+    
+    .conteudo {
+        width: 100%;
+    }
+}
