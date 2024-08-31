@@ -16,7 +16,11 @@
 }
 
 
-
+.link-parceiro {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkorange;
+}
 .row {
     margin: 0;
 }
