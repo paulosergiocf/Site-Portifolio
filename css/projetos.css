@@ -1,7 +1,6 @@
 
 /* Seção Projetos */
 #projetos {
-    background: #252525;
     padding: 50px 0;
     width: 100%;
 }
@@ -15,7 +14,9 @@
     margin-bottom: 40px;
 }
 
-
+.projetos {
+    background-color: #252525;
+}
 .link-parceiro {
     text-decoration: none;
     font-weight: bold;

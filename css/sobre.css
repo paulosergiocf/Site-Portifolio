@@ -61,7 +61,7 @@ hr {
     outline: none;
 }
 
-.sobre .accordion-collapse {
+.sobre .tab-content {
     /* Cor de fundo do conteúdo expandido */
     padding: 15px;
     color: #f2f2f2;
