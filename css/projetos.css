@@ -72,6 +72,10 @@
     margin-right: 5px;
 }
 
+.bg-secondary {
+    padding: 0.5rem !important;
+}
+
 .disponibilizacao {
     display: flex;
     justify-content: center;
@@ -96,6 +100,7 @@
 }
 
 /* Estilização Responsiva (Exemplo para tablets e smartphones) */
+
 @media (max-width: 768px) {
     .row {
         flex-direction: column;

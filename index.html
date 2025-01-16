@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <div class="container conteudo">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#inicio"><span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>&nbsp;paulosergiocf</a>
+                    <a class="navbar-brand" href="#inicio" style="color: darkorange;"><span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>&nbsp;paulosergiocf</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -92,7 +93,9 @@
                     </article>
 
                     <div class="col">
-                            <img class="img-fluid" src="img/1.svg" alt="SVG">
+                            <video class="img-fluid" loop muted autoplay>
+                                <source src="img/presentation.mp4" type="video/mp4">
+                            </video>
                     </div>
                 </div>
             </div>
@@ -130,7 +133,7 @@
                         <img src="img/StudioString.svg" class="card-img-top" alt="capa-projeto">
                         <div class="card-body">
                             <h5 class="card-title">Site Studio Strings</h5>
-                            <p class="card-text">Site para loja de instrumentos musicais, desenvolvido na plataforma Wix em parceria com <a class="link-parceiro" href="https://github.com/isaiaszanoni">Isaias</a>.</p>
+                            <p class="card-text">Site para loja de instrumentos musicais, desenvolvido na plataforma Wix em parceria com <a class="link-parceiro" href="https://www.linkedin.com/in/isaiasz/" target="_blank">Isaias</a>.</p>
                             <div class="text-center my-3">
                                 <span class="badge bg-secondary">wix</span>
                             </div>
@@ -235,10 +238,10 @@
                         <div class="row">
                             <div class="col-6 col-sm-2">
                             <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                                Olá, sou apaixonado por tecnologia e atuo como desenvolvedor Java na empresa <strong>Tata Consultancy Services</strong>. Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>e busco sempre complementar meus conhecimentos para me manter atualizado. Tenho experiência em diversas linguagens e tecnologias
+                                Olá, sou apaixonado por tecnologia e atuo como desenvolvedor Java na empresa <strong>Tata Consultancy Services</strong>. Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e busco sempre complementar meus conhecimentos para me manter atualizado. Tenho experiência em diversas linguagens e tecnologias
                                 entre elas
                                 <code><strong>python, java, docker, linux, angular, jsf, type script</strong></code>
-                                entre outros.
+                                entre outras.
                             </p>
                         </div>
                         <div class=" col-6 col-sm-2">
@@ -255,9 +258,8 @@
                     </div>
                     <div class="tab-pane fade" id="educacao" role="tabpanel" aria-labelledby="educacao-tab">
                         <div class="accordion-body">
-                            <li><p>Formado em <strong>Análise e Desenvolvimento de Sistema</strong> no início de
-                                2024 pela Universidade Estácio de Sá.</p></li>
-                            <li><p>Cursando Pós-graduação em <strong>Engenharia de Software</strong> na Universidade Descomplica.</p></li>
+                            <li><p>Formado em <strong>Análise e Desenvolvimento de Sistema</strong> 2021/2024 pela Universidade Estácio de Sá.</p></li>
+                            <li><p>Cursando Pós-graduação em <strong>Engenharia de Software</strong> 2024/Em Andamento na Universidade Descomplica.</p></li>
                         </div>
                     </div>
                   </div>
@@ -280,7 +282,7 @@
 
             <form action="https://api.web3forms.com/submit" method="POST">
 
-                <input type="hidden" name="access_key" value="d500dd23-015a-4cc7-9e8c-31ede41bd844">
+                <input type="hidden" name="access_key" value="e3694c56-4e9c-4849-b26d-17732f7674e9">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">🪪</span>
                     <input type="text" class="form-control" placeholder="seu nome aqui" aria-label="Username"
@@ -306,9 +308,12 @@
                         400px></textarea>
                 </div>
                 <div class="input-group captcha">
-                    <div class="h-captcha" data-captcha="true"></div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </div>
-
+                <div id="mensagem-enviada" class="alert alert-success" style="display: none;" role="alert">
+                    Mensagem enviada! Obrigado por entrar em contato.
+                </div>
+                
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
@@ -321,7 +326,7 @@
                 <div class="row">
                     <div class="container">
                         <span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>
-                        <small> &#169; 2024 - Paulo Sergio de Campos Filho.</small>
+                        <small> &#169; 2025 - Paulo Sergio de Campos Filho.</small>
                     </div>
 
                 </div>
@@ -332,7 +337,22 @@
     <a href="https://wa.me/5515998462920" target="_blank" id="whatsapp-button">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
     </a>
-
+    <script>
+        const form = document.querySelector('.contato form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            })
+                .then(() => {
+                    form.reset();
+                    document.getElementById('mensagem-enviada').style.display = 'block';
+                })
+                .catch(error => console.error('Erro ao enviar mensagem:', error));
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous" async defer></script>
