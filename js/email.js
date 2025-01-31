@@ -1,22 +1,25 @@
-const form = document.querySelector('.contato form');
-const phoneInput = document.querySelector('.contato .input-group-text:nth-child(3) + input[type="tel"]');
-const messageInput = document.querySelector('.contato textarea[name="message"]');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.contato form');
+  const mensagemEnviada = document.getElementById('mensagem-enviada');
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent default form submission
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Previne o comportamento padrão do formulário
 
-  const phoneNumber = phoneInput.value.replace(/\D/g, ''); // Remove non-digit characters from phone number
-  const message = messageInput.value;
+      const formData = new FormData(form);
 
-  // Concatenate phone number and message
-  const updatedMessage = `${message} \n\nTelefone: ${phoneNumber}`;
-
-  // Update the message field with the concatenated value
-  messageInput.value = updatedMessage;
-
-  // Submit the form with the updated message
-  form.submit();
-
-
+      fetch(form.action, {
+          method: form.method,
+          body: formData
+      })
+      .then(() => {
+          // Reseta o formulário e exibe mensagem de sucesso
+          form.reset();
+          mensagemEnviada.style.display = 'block';
+      })
+      .catch(error => {
+          console.error('Erro ao enviar mensagem:', error);
+          mensagemEnviada.style.display = 'none'; // Oculta mensagem caso ocorra erro
+      });
+  });
 });
 
