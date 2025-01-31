@@ -72,6 +72,10 @@
     margin-right: 5px;
 }
 
+.bg-secondary {
+    padding: 0.5rem !important;
+}
+
 .disponibilizacao {
     display: flex;
     justify-content: center;
@@ -95,16 +99,3 @@
     color: darkorange;
 }
 
-/* Estilização Responsiva (Exemplo para tablets e smartphones) */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        /* Cards em coluna */
-    }
-    .col {
-        flex: 1 0 auto;
-        /* Distribuir espaço igualmente entre os cards */
-        margin-bottom: 20px;
-        /* Espaçamento entre cards na vertical */
-    }
-}
