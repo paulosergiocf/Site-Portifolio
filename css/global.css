@@ -1,64 +1,40 @@
+:root {
+    --background-default: #181818;
+    --background-default-hard: #111111;
+    --background-low-color: ##02020;
+    --text-title: #f2f2f2;
+    --text-body: #b0b8c9;
+    --accent-color: darkorange;
+    --card-bg: rgba(36, 41, 51, 0.95);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-gradient: linear-gradient(135deg, #d6ae3e 0%, darkorange 100%);
+    --nav-height: 80px;
+}
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul {
-    list-style: none;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
 }
-
-a {
-    text-decoration: none;
-}
-
 
 body {
-    background-color: #252525;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
+    background: var(--background-default);
+    color: var(--text-body);
+    line-height: 1.6;
 }
 
-header {
-    width: 100%;
-    border: 0;
-    margin: 0;
-    padding: 0;
+
+section:nth-child(odd) {
+    background: var(--background-low-color);
 }
 
-.conteudo {
-    width: 80%;
-    
+section h2 {
+    text-align: center;
 }
-
-@media (max-width: 768px) {
-    .conteudo {
-        width: 100%;
-        
-    }
-}
-
-#whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    border-radius: 50%;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  #whatsapp-button img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  #whatsapp-button:hover {
-    transform: scale(1.1);
-  }
-  
-

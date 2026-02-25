@@ -1,0 +1,353 @@
+#education {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: var(--text-title);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-subtitle::before,
+.section-subtitle::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: var(--border-color);
+}
+
+/* Grid de Formação Formal - Destaque */
+.formal-education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Card de Formação Formal - Destaque Especial */
+.formal-card {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--card-bg) 100%);
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formal-card::before {
+    content: '🎓';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 8rem;
+    opacity: 0.05;
+    transform: rotate(15deg);
+}
+
+.formal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(207, 96, 22, 0.1);
+    border-color: rgba(202, 122, 31, 0.1);
+}
+
+.formal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(100, 181, 246, 0.2);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+
+.formal-title {
+    color: var(--text-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.formal-institution {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-body);
+    font-size: 1rem;
+}
+
+.formal-period {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    width: fit-content;
+    margin-top: auto;
+}
+
+.status-ongoing {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Grid de Cursos Complementares */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card de Curso Complementar */
+.course-card {
+    background: var(--background-default-hard);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(206, 128, 27, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.course-card:hover::before {
+    transform: scaleY(1);
+}
+
+.course-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-title {
+    color: var(--text-title);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.course-institution {
+    color: var(--text-body);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.course-period {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Timeline connector para cursos */
+.timeline-connector {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #education {
+        padding: 3rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .formal-education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formal-card {
+        padding: 1.5rem;
+    }
+
+    .formal-title {
+        font-size: 1.25rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formal-card::before {
+        font-size: 6rem;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .formal-education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formal-card,
+.course-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.formal-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.formal-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.course-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.course-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.course-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Ícones decorativos */
+.icon-graduation::before {
+    content: '🎓';
+}
+
+.icon-calendar::before {
+    content: '📅';
+}
+
+.icon-building::before {
+    content: '🏛️';
+}
+
+.icon-code::before {
+    content: '💻';
+}
+
+.icon-frontend::before {
+    content: '🎨';
+}
+
+.icon-devops::before {
+    content: '⚙️';
+}
+
+.icon-security::before {
+    content: '🔒';
+}
+
+.icon-cloud::before {
+    content: '☁️';
+}
+
+.icon-clock::before {
+    content: '⏱️';
+}

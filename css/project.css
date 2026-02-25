@@ -1,0 +1,306 @@
+#projects {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: var(--background-default);
+}
+
+/* Background tecnológico suave */
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        /* Gradientes radiais na cor de destaque (laranja) */
+        radial-gradient(ellipse at 15% 85%, rgba(243, 167, 80, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 15%, rgba(243, 167, 80, 0.06) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 40%),
+        /* Grid sutil */
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        60px 60px,
+        60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Partículas/círculos flutuantes tecnológicos */
+#projects::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(243, 167, 80, 0.12) 0%, transparent 2.5%),
+        radial-gradient(circle at 90% 80%, rgba(243, 167, 80, 0.08) 0%, transparent 2%),
+        radial-gradient(circle at 30% 60%, rgba(243, 167, 80, 0.06) 0%, transparent 1.5%),
+        radial-gradient(circle at 70% 40%, rgba(243, 167, 80, 0.1) 0%, transparent 3%),
+        radial-gradient(circle at 50% 90%, rgba(255, 255, 255, 0.05) 0%, transparent 2%);
+    pointer-events: none;
+    z-index: 0;
+    animation: float-particles 20s ease-in-out infinite;
+}
+
+/* Animação sutil das partículas */
+@keyframes float-particles {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    33% {
+        transform: translate(10px, -15px) scale(1.02);
+        opacity: 0.8;
+    }
+    66% {
+        transform: translate(-8px, 8px) scale(0.98);
+        opacity: 0.9;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    color: var(--text-title);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Card de Projeto */
+.project-card {
+    background: rgba(30, 30, 30, 0.95); /* Leve transparência para integrar com fundo */
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 40px rgba(243, 167, 80, 0.15);
+    background: rgba(35, 35, 35, 0.98);
+}
+
+/* Ícone/Imagem do Projeto */
+.project-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.05);
+}
+
+/* Título do Projeto */
+.project-title {
+    color: var(--text-title);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Descrição do Projeto */
+.project-description {
+    color: var(--text-body);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Container de Badges (Tecnologias) */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Badge de Tecnologia */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--background-default);
+    color: var(--text-title);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.badge:hover {
+    background: var(--accent-color);
+    color: var(--background-default);
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+}
+
+/* Ícones das tecnologias (usando emoji como placeholder) */
+.badge-icon {
+    font-size: 0.9rem;
+}
+
+/* Container de Botões */
+.project-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: var(--background-default);
+}
+
+.btn-primary:hover {
+    background: var(--text-title);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(236, 127, 2, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-title);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Ícones nos botões */
+.btn-icon {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #projects {
+        padding: 3rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+.project-card:nth-child(7) { animation-delay: 0.7s; }

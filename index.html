@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJX3SW186Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-WJX3SW186Z');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paulo Sergio de Campos Filho">
-    <meta name="description" content="Desenvolvedor Full Stack, com experiência em Python, Java, Docker, Linux e Angular.">
+    <meta name="description"
+        content="Desenvolvedor Full Stack, com experiência em Python, Java, Docker, Linux e Angular.">
     <meta name="keywords" content="Python, Java, Docker, Linux, Angular, Desenvolvimento Web, Inteligência Artificial">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -22,345 +22,596 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="canonical" href="https://paulosergiocf.github.io/">
     <meta property="og:title" content="Paulo Sergio | Desenvolvedor">
-    <meta property="og:description" content="Desenvolvedor Full Stack, com experiência em Python, Java, Docker, Linux e Angular.">
+    <meta property="og:description"
+        content="Desenvolvedor Full Stack, com experiência em Python, Java, Docker, Linux e Angular.">
     <meta property="og:image" content="img/logo.svg">
     <meta property="og:url" content="https://paulosergiocf.github.io/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/scroll-indicator.css">
     <link rel="stylesheet" href="css/menu-bar.css">
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="container conteudo">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#inicio" style="color: darkorange;"><span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>&nbsp;paulosergiocf</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projetos">Projetos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#sobre">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contato">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <header id="navbar">
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/logo.svg" alt="Logo">
+                    <span>paulosergiocf</span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#education" class="nav-link">Formação</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
-    <!-- Inicio -->
-    <main class="inicio">
-        <div class="container conteudo">
-            <div class="container text-center">
-                <div class="row">
-                    <article class="col">
-                        <time datetime="2024-05-05 12:15"></time>
-                        <div class="titulo">
-                            <h1>PAULO SERGIO DE CAMPOS FILHO</h1>
-                        </div>
-                        <div class="subtitulo">
-                            <h2>Desenvolvedor de Software</h2>
-                        </div>
-                        <div class="texto">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;
-                                Sou um profissional proativo e dedicado e atuo com desenvolvimento de software. Tenho amplo conhecimento em diversas linguagens e tecnologias, como Java, Python, Docker, Angular, etc. Estou pronto para criar soluções sob medida para as mais diversas necessidades.
-                            </p>
-                        </div>
-                        <div class="botao">
-                            <a href="#contato">Entrar em contato</a>
-                        </div>
-                        <br>
-             
-                       
-                    </article>
 
-                    <div class="col">
-                            <video class="img-fluid" loop muted autoplay>
-                                <source src="img/presentation.mp4" type="video/mp4">
-                            </video>
-                    </div>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-video">
+                <video autoplay muted loop playsinline poster="img/1.svg">
+                    <source src="img/presentation2.mp4" type="video/mp4">
+                    <source src="video/animacao.webm" type="video/webm">
+                    <img src="img/1.svg" alt="Ilustração animada">
+                </video>
+            </div>
+
+            <div class="home-content">
+                <div class="banner-content">
+                    <h1>Paulo Sergio de Campos Filho</h1>
+                    <p class="subtitle">Desenvolvedor de Software | Tecnologia & Inovação</p>
+                    <button class="banner-button"><a href="#contact">Entre em contato</a></button>
                 </div>
             </div>
         </div>
-    </main>
-    <!-- Projetos -->
-    <section id="projetos" class="projetos py-5">
-        <div class="container conteudo">
-            <div class="text-center mb-5">
-                <h2 class="text-uppercase text-light">Portifólio de Projetos</h2>
+
+        <div class="scroll-indicator"></div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad/refs/heads/main/icon/icon.png"
+                        alt="UTM" class="project-icon">
+                    <h3 class="project-title">Coordenadas UTM</h3>
+                    <p class="project-description">
+                        Ferramenta para conversão e digitação automática de coordenadas UTM no AutoCAD, otimizando
+                        trabalhos de topografia.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Python
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Tkinter
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad" target="_blank"
+                            class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Repositório
+                        </a>
+                        <a href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad/releases/tag/v2.0"
+                            target="_blank" class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Aplicação
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="img/camip.svg" alt="logo-cam" class="project-icon">
+                    <h3 class="project-title">Camera IP - RSTP</h3>
+                    <p class="project-description">
+                        Gerenciador de camera IP via rede doméstica atráves de protocolo RSTP.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Python
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Tkinter
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            OpenCV
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/paulosergiocf/CameraIPClient" target="_blank" class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Repositório
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://cterawan.com.br/assets/icons/logo.svg" alt="Studio" class="project-icon">
+                    <h3 class="project-title">Site - CT Erawan</h3>
+                    <p class="project-description">
+                        Site para centro de treinamento em Muay Thai.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Html
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Css
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Js
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://cterawan.com.br/" target="_blank" class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Acessar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="/img/usb.svg" alt="Amigo Secreto" class="project-icon">
+                    <h3 class="project-title">Chaveamento USB</h3>
+                    <p class="project-description">
+                        Projeto de Placa PCB simples para alterar dispositvo usb entre dois compudatores
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            PCB
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/paulosergiocf/AlternadorUSB" target="_blank" class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Repositório
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/paulosergiocf/CalculadoraDeArea/refs/heads/main/icones/icon.png"
+                        alt="Blog" class="project-icon">
+                    <h3 class="project-title">Calculadora de conversão de área</h3>
+                    <p class="project-description">
+                        Esta calculadora foi criada com o objetivo de facilitar conversões de área mais utilizadas em
+                        certidões de registro de imóveis rurais no estado do paraná.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Python
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Tkinter
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/paulosergiocf/CalculadoraDeArea" target="_blank"
+                            class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Repositório
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/paulosergiocf/Mude/594df1f0cfe8b77494d02b094f4d8fb0180f7128/img/logo.svg"
+                        alt="Mude" class="project-icon">
+                    <h3 class="project-title">Mude</h3>
+                    <p class="project-description">
+                        Aplicação para te apoiar na formação de hábitos a longo prazo.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Python
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon"></span>
+                            Gtk
+                        </span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/paulosergiocf/Mude" target="_blank" class="btn btn-ghost">
+                            <span class="btn-icon"></span>
+                            Repositório
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/capa-digitar-coordenadas-utm.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Digitar Coordenadas UTM no Autocad</h5>
-                            <p class="card-text">Aplicação em python integrada ao Autocad, utilizando circulo e texto
-                                para criar a representação de um ponto em um arquivo DWG. Útil para digitar longas listas de coordenadas com identificação diretamente no Autocad.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">python</span>
-                                <span class="badge bg-secondary">tkinter</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad" target="_blank" class="btn btn-primary mx-1">Repositório</a>
-                                <a href="https://github.com/paulosergiocf/Digitar_Coordenadas_utm_AutoCad/releases/tag/v2.0" target="_blank" class="btn btn-primary mx-1">Aplicação</a>
-                            </div>
+                <!-- Coluna de Conteúdo -->
+                <div class="content-column">
+                    <br>
+                    <div class="section-label">Software Developer</div>
+
+                    <h2 class="main-title">
+                        Paulo Sergio<br>
+                        <span>de Campos Filho</span>
+                    </h2>
+
+                    <div class="description">
+                        <div class="highlight-box">
+                            Desenvolvedor Back-End na <strong>Solutis Tecnologia</strong>.
+                            Graduado em <strong>Análise e Desenvolvimento de Sistemas</strong> e 
+                            atualmente aprofundando conhecimentos em pós-graduação em 
+                            <strong>Engenharia de Software</strong>, com foco em 
+                            <strong>Arquitetura de Software</strong>, 
+                            <strong>Cloud Computing</strong> e 
+                            <strong>DevOps</strong>. Comprometido com boas práticas de 
+                            desenvolvimento, código limpo e entrega de valor através 
+                            de tecnologia.
+                        </div>
+                    </div>
+
+                    <div class="tech-section">
+                        <div class="tech-label">Tech Stack</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JSF</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <a href="https://www.linkedin.com/in/paulosergiocf/" target="_blank" class="btn btn-ghost">
+                            <span><img src="img/icons8-linkedin.svg" width="32px"></span>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/paulosergiocf" target="_blank" class="btn btn-ghost">
+                            <span><img src="img/github-svgrepo-com.svg" width="32px"></span>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna de Imagem -->
+                <div class="image-column">
+                    <div class="image-wrapper">
+                        <div class="orbit-ring">
+                            <div class="orbit-dot"></div>
+                            <div class="orbit-dot"></div>
+                            <div class="orbit-dot"></div>
+                        </div>
+
+                        <div class="profile-container">
+                            <img class="profile-image" src="img/perfil2.png" alt="Paulo Sergio">
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/paulosergiocf" target="_blank" class="social-link"
+                                title="GitHub">
+                                <span><img src="img/github-svgrepo-com.svg" width="32px"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/paulosergiocf/" target="_blank" class="social-link"
+                                title="LinkedIn">
+                                <span><img src="img/icons8-linkedin.svg" width="32px"></span>
+                            </a>
+                            <a href="mailto:paulosergiocf.dev@gmail.com" class="social-link" title="Email">
+                                <span><img src="img/email-opened-svgrepo-com.svg" width="32px"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/StudioString.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Site Studio Strings</h5>
-                            <p class="card-text">Site para loja de instrumentos musicais, desenvolvido na plataforma Wix em parceria com <a class="link-parceiro" href="https://www.linkedin.com/in/isaiasz/" target="_blank">Isaias</a>.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">wix</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://www.studiostrings.com.br/" target="_blank" class="btn btn-primary mx-1">Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/capa-amigo-secreto.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Web APP - Amigo Secreto</h5>
-                            <p class="card-text">Aplicação Web para gerenciar e realizar sorteios de amigo secreto, facilitando a organização de eventos comemorativos.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">python</span>
-                                <span class="badge bg-secondary">postgres</span>
-                                <span class="badge bg-secondary">django</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://github.com/paulosergiocf/AmigoSecreto" target="_blank" class="btn btn-primary mx-1">Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/blog.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Blog</h5>
-                            <p class="card-text">Blog criado em Angular como projeto da Formação em Angular da DIO, com design minimalista e integração entre páginas e notícias.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">angular</span>
-                                <span class="badge bg-secondary">typescript</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://github.com/paulosergiocf/blog" target="_blank" class="btn btn-primary mx-1">Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/calc.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Calculadora de Área</h5>
-                            <p class="card-text">Criada com o objetivo de facilitar conversões de área mais utilizadas em certidões de registro de imóveis rurais no estado do paraná.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">Python</span>
-                                <span class="badge bg-secondary">Tkinter</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://github.com/paulosergiocf/CalculadoraDeArea" target="_blank" class="btn btn-primary mx-1">Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="img/FastApiBase.svg" class="card-img-top" alt="capa-projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">FastApiBase</h5>
-                            <p class="card-text">Repositório que fornece uma base mínima para criação de APIs com FastAPI.</p>
-                            <div class="text-center my-3">
-                                <span class="badge bg-secondary">python</span>
-                                <span class="badge bg-secondary">fastapi</span>
-                                <span class="badge bg-secondary">jwt</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="https://github.com/paulosergiocf/FastApi-Base" target="_blank" class="btn btn-primary mx-1">Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    <!-- Sobre -->
-    <section id="sobre" class="sobre">
-        <div class="container conteudo">
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="formal-education-grid">
 
-            <div class="titulo">
-                <h2>Sobre</h2>
+                <!-- Graduação -->
+                <div class="formal-card">
+                    <span class="formal-badge">
+                        <span></span>
+                        Graduação
+                    </span>
+                    <h3 class="formal-title">Análise e Desenvolvimento de Sistemas</h3>
+                    <div class="formal-institution">
+                        <span></span>
+                        Universidade Estácio de Sá
+                    </div>
+                    <div class="formal-period">
+                        <span></span>
+                        2021 — 2024 • Concluído
+                    </div>
+                </div>
+
+                <!-- Pós-graduação -->
+                <div class="formal-card">
+                    <span class="formal-badge">
+                        <span></span>
+                        Pós-graduação
+                    </span>
+                    <h3 class="formal-title">Engenharia de Software</h3>
+                    <div class="formal-institution">
+                        <span></span>
+                        Universidade Descomplica
+                    </div>
+                    <div class="formal-period">
+                        <span>⏱</span>
+                        2024 — Em Andamento
+                    </div>
+                </div>
+
             </div>
 
-            <div class="container text-center">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="apresentacao-tab" data-bs-toggle="tab" data-bs-target="#apresentacao" type="button" role="tab" aria-controls="apresentacao" aria-selected="true">Apresentação</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="educacao-tab" data-bs-toggle="tab" data-bs-target="#educacao" type="button" role="tab" aria-controls="educacao" aria-selected="false">Educacão</button>
-                    </li>
-                  </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="apresentacao" role="tabpanel" aria-labelledby="apresentacao-tab">
-                        <div class="row">
-                            <div class="col-6 col-sm-2">
-                            <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                                Olá, sou apaixonado por tecnologia e atuo como desenvolvedor Java na empresa <strong>Tata Consultancy Services</strong>. Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e busco sempre complementar meus conhecimentos para me manter atualizado. Tenho experiência em diversas linguagens e tecnologias
-                                entre elas
-                                <code><strong>python, java, docker, linux, angular, jsf, type script</strong></code>
-                                entre outras.
-                            </p>
+            <div class="container">
+
+                <div class="container"><br>
+                    <h3 class="section-subtitle">Cursos Complementares</h3>
+                    <br>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <h4 class="course-title">Back-End</h4>
+                            <div class="course-institution">
+                                <ul>
+                                    <li>Python, Flask, Django, FastAPI, TDD, Django REST Framework</li>
+                                    <li>Java, JSF, SpringBoot</li>
+                                </ul>
+                            </div>
+                            <div class="course-period">
+                                <span> ⏱ 333 h</span>
+                            </div>
                         </div>
-                        <div class=" col-6 col-sm-2">
-                                <div class="imagem">
-                                    <button type="button" class="btn btn-lg btn-danger"
-                                        data-bs-toggle="popover"
-                                        data-bs-title="Olá! Estou muito feliz que esteja aqui!"
-                                        data-bs-content="Se tiver alguma dúvida por favor entre em contato">
-                                        <img class="img-fluid" src="img/perfil2.png" alt="Foto-Pefil">
-                                    </button>
-                                </div>
+                        <div class="course-card">
+                            <h4 class="course-title">Front-End</h4>
+                            <div class="course-institution">
+                                <ul>
+                                    <li>Html, CSS, JavaScript, TypeScript</li>
+                                    <li>Angular</li>
+                                </ul>
+                            </div>
+                            <div class="course-period">
+                                <span>⏱</span>
+                                58 horas
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <h4 class="course-title">Devops</h4>
+                            <div class="course-institution">
+                                <ul>
+                                    <li>Docker</li>
+                                    <li>Linux</li>
+                                    <li>Git</li>
+                                    <li>Shell Script</li>
+                                    <li>Redes</li>Redes
+                                    
+                                </ul>
+                            </div>
+                            <div class="course-period">
+                                <span> ⏱ 66 h</span>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-icon"></div>
+                            <h4 class="course-title">CyberSecurity</h4>
+                            <div class="course-institution">
+                                <ul>
+                                    <li>Cyber Security Essentials, Pentest 2.0</li>
+                                </ul>
+                            </div>
+                            <div class="course-period">
+                                <span>⏱</span>
+                                48 horas
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <h4 class="course-title">Inteligência Artificial</h4>
+                            <div class="course-institution">
+                                <ul>
+                                    <li>LangChain</li>
+                                </ul>
+                            </div>
+                            <div class="course-period">
+                                <span>8 horas</span>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="educacao" role="tabpanel" aria-labelledby="educacao-tab">
-                        <div class="accordion-body">
-                            <br><li>Formado em <strong>Análise e Desenvolvimento de Sistema</strong> 2021/2024 pela Universidade Estácio de Sá.</li>
-                            <br><li>Cursando Pós-graduação em <strong>Engenharia de Software</strong> 2024/Em Andamento na Universidade Descomplica.</li>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-label">Vamos Conversar</div>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Tem um projeto em mente ou quer trocar ideias?
+                    Estou sempre aberto a novas oportunidades e parcerias.
+                </p>
+            </div>
+
+            <!-- Grid de Conteúdo -->
+            <div class="contact-grid">
+
+                <!-- Coluna de Informações -->
+                <div class="info-column">
+
+                    <!-- Contatos Rápidos -->
+                    <div class="quick-contacts">
+                        <a href="https://wa.me/5515998462920" target="_blank" class="contact-card whatsapp">
+                            <div class="contact-icon">
+                                <img src="img/whatsapp-svgrepo-com.svg" width="32px">
+                            </div>
+                            <div class="contact-info">
+                                <h4>WhatsApp</h4>
+                                <span>clique para entrar em contato</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:paulosergiocf@email.com" class="contact-card email">
+                            <div class="contact-icon"><img src="img/email-opened-svgrepo-com.svg" width="32px"></div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <span>paulosergiocf.dev@gmail.com</span>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div>
+                        <h4
+                            style="color: var(--text-title); margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">
+                            Redes Sociais
+                        </h4>
+                        <div class="social-grid">
+                            <a href="https://www.linkedin.com/in/paulosergiocf/" target="_blank"
+                                class="social-btn linkedin" title="LinkedIn">
+                                <span class="icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                                        width="32px" />
+                                </span>
+                                <span>LinkedIn</span>
+                            </a>
                         </div>
                     </div>
-                  </div>
-                  
-        </div>
-        <div class="text-center">
-            <a href="https://www.linkedin.com/in/paulosergiocf/" target="_blank" class="btn btn-primary mx-1">LinkedIn</a>
-            <a href="https://github.com/paulosergiocf" target="_blank" class="btn btn-primary mx-1">GitHub</a>
-        </div>
 
-    </section>
-    <!-- Contato -->
-    <section id="contato" class="contato">
-        <div class="container conteudo">
-
-            <div class="titulo">
-                <h2>Contato</h2>
-            </div>
-
-
-            <form action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="e3694c56-4e9c-4849-b26d-17732f7674e9">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">🪪</span>
-                    <input type="text" class="form-control" placeholder="seu nome aqui" aria-label="Username"
-                        aria-describedby="basic-addon1" name="name" required width: 400px>
                 </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">✉️</span>
-                    <input class="form-control" placeholder="seu e-mail aqui" aria-label="mail"
-                        aria-describedby="basic-addon2" type="email" name="email" required width: 400px>
-                </div>
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text" style="color: white;">☎️</span>
-                    <input type="tel" class="form-control" aria-label="cellphone"
-                        placeholder="Digite seu telefone (por exemplo: 11988887777)"
-                        title="Exemplo: xx xxxxx-xxxx" width: 400px>
-                </div>
-
-                <div class="input-group">
-                    <span class="input-group-text">📝</span>
-                    <textarea class="form-control" aria-label="With textarea" name="message" required width:
-                        400px></textarea>
-                </div>
-                <div class="input-group captcha">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                </div>
-                <div id="mensagem-enviada" class="alert alert-success" style="display: none;" role="alert">
-                    Mensagem enviada! Obrigado por entrar em contato.
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
-    
-    <!-- Rodapé -->
-    <footer class="container-fluid text-white-50 py-4">
-        <div class="container conteudo">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="container">
-                        <span><img src="img/logo.svg" alt="Logo" width="50" class="img-fluid "></span>
-                        <small> &#169; 2025 - Paulo Sergio de Campos Filho.</small>
+                <div class="form-column">
+                    <div class="form-header">
+                        <h3>Envie uma Mensagem</h3>
+                        <p>Preencha o formulário abaixo e responderei o mais breve possível.</p>
                     </div>
 
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e3694c56-4e9c-4849-b26d-17732f7674e9">
+                        <div class="form-group">
+                            <label class="form-label">Nome</label>
+                            <input type="text" name="name" class="form-input" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Assunto</label>
+                            <input type="text" name="subject" class="form-input" placeholder="Sobre o que deseja falar?"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Mensagem</label>
+                            <textarea name="message" class="form-textarea" placeholder="Escreva sua mensagem aqui..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            Enviar Mensagem
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
                 </div>
+
             </div>
-            
         </div>
-    </footer>
-    <a href="https://wa.me/5515998462920" target="_blank" id="whatsapp-button">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
-    </a>
-    <script>
-        const form = document.querySelector('.contato form');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(form);
-            fetch(form.action, {
-                method: form.method,
-                body: formData
-            })
-                .then(() => {
-                    form.reset();
-                    document.getElementById('mensagem-enviada').style.display = 'block';
-                })
-                .catch(error => console.error('Erro ao enviar mensagem:', error));
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous" async defer></script>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const form = this;
+                const submitBtn = document.getElementById('submitBtn');
+                const formStatus = document.getElementById('formStatus');
+                const originalBtnText = submitBtn.textContent;
+
+                // Desabilita o botão e mostra loading
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+                formStatus.style.display = 'none';
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        formStatus.className = 'form-status success';
+                        formStatus.textContent = 'Mensagem enviada com sucesso! Entrarei em contato em breve.';
+                        form.reset();
+                    } else {
+                        throw new Error(result.message || 'Erro ao enviar mensagem');
+                    }
+                } catch (error) {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = 'Erro ao enviar mensagem. Tente novamente mais tarde.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                    formStatus.style.display = 'block';
+
+                    // Esconde a mensagem após 5 segundos
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        </script>
+
+        
+    </section>
+    <script src="js/email.js"></script>
+    <script src="js/menu-bar.js" defer></script>
+    <script src="js/contact.js" defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script src="js/mensagem.js" async defer></script>
-    <script src="js/email.js" async defer></script>
+
 
 </body>
-
 
 </html>
